@@ -1,0 +1,40 @@
+input{
+    border-radius: 10px;
+}
+
+header{
+    border-radius: 10px;
+    background-color:  #283540;
+    }
+
+    .button:hover{
+        background-color: #172E73;
+        color: #BDBFAA;
+        transition-duration: 0.5s;
+        
+       }
+       
+       a:hover{
+           background-color:  #BDBFAA;
+           color: black;
+           transition-duration:1s;
+           border-radius: 10px;
+           text-decoration: overline;
+           
+       }
+
+       main{
+        border-radius: 10px;
+        background-color:  #BDBFAA;
+        color: rgb(0, 0, 0);
+        }
+
+        .invalid {
+            border: 2px solid red;
+            
+        }
+        
+        input{
+            border-radius: 10px;
+        }
+        
