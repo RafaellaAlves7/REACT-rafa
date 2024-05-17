@@ -5,7 +5,8 @@ import Footer from './components/Footer/Footer';
 import Curriculo from './components/Curriculo/Curriculo';
 import Contato from './components/Contato/Contato';
 import Portfolio from './components/Portfolio/Portfolio';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import BarraNavegacao from './components/BarraNavegacao/BarraNavegacao'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
@@ -16,16 +17,7 @@ function App() {
       <Header></Header>
 
       <BrowserRouter>
-        <nav>
-
-          <div id="container">
-            <div> <Link to="/">Currículo</Link></div>
-            <div> <Link to="/Portfolio">Portfólio</Link></div>
-            <div><Link to="/Contato">Contato</Link></div>
-
-
-          </div>
-        </nav>
+     <BarraNavegacao></BarraNavegacao>
         <Routes>
 
           <Route index element={<Curriculo />} />

@@ -1,5 +1,7 @@
 import React from "react";
 import rafaPerfil from "../../assets/rafa-perfil.jpg"
+import './Header.css';
+
 function Header() {
     return (
         <header>

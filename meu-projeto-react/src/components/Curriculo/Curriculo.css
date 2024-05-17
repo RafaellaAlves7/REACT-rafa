@@ -1,0 +1,16 @@
+ main{
+    border-radius: 10px;
+    background-color:  #BDBFAA;
+    color: rgb(0, 0, 0);
+    }
+
+   
+
+  .button:hover{
+    background-color: #172E73;
+    color: #BDBFAA;
+    transition-duration: 0.5s;
+    
+    }
+    
+   
