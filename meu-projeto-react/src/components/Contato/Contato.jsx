@@ -3,9 +3,10 @@ import './Contato.css';
 
 function Contato() {
     return (
-        
+        <main>
+        <div className="formulario">
        <form onsubmit="event.preventDefault()">
-
+     
         <fieldset>
            <label for="input-name">Nome</label>
            <input type="text" name="input-nome" id="input-nome" required minlength="3"/>
@@ -26,11 +27,14 @@ function Contato() {
             <textarea name="input-msg" id="input-msg" cols="30" rows="10"></textarea>
 
             <center>
-                <input type="submit" value="ENVIAR" class="button" onclick="enviarFormulario()"/>
+                <input type="submit" value="ENVIAR" className="button" onclick="enviarFormulario()"/>
             </center>
         </fieldset>
 
        </form>
+
+       </div>
+       </main>
 
     )
 }

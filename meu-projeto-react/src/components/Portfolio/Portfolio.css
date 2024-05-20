@@ -3,8 +3,10 @@
     border: 1px solid white;
     display: inline-block;
     text-align: center;
-    
+   
 }
+
+
 
 #perfil{
     border-radius: 80px;
@@ -17,5 +19,8 @@
     color: rgb(0, 0, 0);
     
     }
+
+
+   
 
     

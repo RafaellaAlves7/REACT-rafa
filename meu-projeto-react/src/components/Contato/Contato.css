@@ -1,15 +1,35 @@
-input{
-    border-radius: 10px;
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
 }
 
-header{
+main{
+  border-radius: 10px;
+  background-color: #BDBFAA;
+  color: rgb(0, 0, 0);
+  }
+
+input{
     border-radius: 10px;
-    background-color:  #283540;
+    background-color: #BDBFAA;
+    
+}
+
+textarea {
+  background-color: bisque;
+}
+  
+
+    .button {
+      background-color: #646cff;
     }
 
     .button:hover{
-        background-color: #172E73;
-        color: #BDBFAA;
+        background-color: #08267e;
+        color: #fefff5;
         transition-duration: 0.5s;
         
        }
@@ -23,11 +43,7 @@ header{
            
        }
 
-       main{
-        border-radius: 10px;
-        background-color:  #BDBFAA;
-        color: rgb(0, 0, 0);
-        }
+      
 
         .invalid {
             border: 2px solid red;

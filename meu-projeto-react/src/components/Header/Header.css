@@ -10,6 +10,11 @@ header{
         
       }
 
+      .imagem {
+        text-align: center;
+      }
+     
+
       #perfil{
         border-radius: 80px;
       

@@ -1,9 +1,16 @@
 nav{
     border-radius: 10px;
     background-color: #283540;
+    
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 250px;*/
+    
     }
 
-    #container{
+    /*#container{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -13,11 +20,16 @@ nav{
         height: 30px;
         width: 250px;
         
-        }
+        }*/
 
-    @media only screen and ( max-width: 600px) {
+    @media only screen and ( max-width: 740px) {
         nav ul li {
             margin: 15px;
-           /* display: inline-block;*/
+            display: inline-block;
+            padding: 5px;
+        }
+
+        nav ul{
+            padding: 0%;
         }
       }
