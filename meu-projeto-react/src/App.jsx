@@ -6,6 +6,7 @@ import Curriculo from './components/Curriculo/Curriculo';
 import Contato from './components/Contato/Contato';
 import Portfolio from './components/Portfolio/Portfolio';
 import BarraNavegacao from './components/BarraNavegacao/BarraNavegacao'
+//import ItemPortfolio from './components/ItemPortfolio/ItemPortfolio';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {

@@ -1,0 +1,23 @@
+.item-portfolio {
+    border: 1px solid white;
+    display: inline-block;
+    text-align: center;
+   
+}
+
+.item-portfolio a {
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+}
+
+a:hover {
+    color: #535bf2;
+  }
+ 
+
+img {
+    border-radius: 80px;
+  
+  }
+    

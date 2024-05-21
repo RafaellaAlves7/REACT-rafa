@@ -50,6 +50,7 @@ header{
       nav{
         border-radius: 10px;
         background-color: #283540;
+        text-align: center;
         }
         
         
@@ -57,6 +58,7 @@ header{
           color:white;
           text-decoration: none;
           font-weight: bold;
+          
           
         }
         

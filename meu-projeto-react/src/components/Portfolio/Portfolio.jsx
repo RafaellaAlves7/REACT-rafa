@@ -1,33 +1,29 @@
 import React from 'react';
 import './Portfolio.css';
-import rafaPerfil from "../../assets/rafa-perfil.jpg"
-import { Link } from 'react-router-dom';
+import rafaPerfil from '../../assets/rafa-perfil.jpg';
+import portfolioData from './Portfolio.json'
+import ItemPortfolio from '../ItemPortfolio/ItemPortfolio';
+import {Link} from 'react-router-dom';
 
 function portfolio() {
 
-    /*const Portfolios = [
-        {
-          Link:"https://www.instagram.com/__rafaella.alvess7__?igsh=bXNuc2g2NXgyMmNz",
-          image:"../../assets/rafa-perfil.jpg",
-          title:"INSTAGRAM"
-        },
-
-        {
-            Link:"https://www.instagram.com/__rafaella.alvess7__?igsh=bXNuc2g2NXgyMmNz",
-          image:"../../assets/rafa-perfil.jpg",
-          title:"INSTAGRAM"
-
-        },
-        
-        {
-            Link:"https://www.instagram.com/__rafaella.alvess7__?igsh=bXNuc2g2NXgyMmNz",
-          image:"../../assets/rafa-perfil.jpg",
-          title:"INSTAGRAM"
-        }
-    ]*/
-
+   
+      return(
+        <main>
+          {portfolioData.map(
+            (item, index) => 
+            <ItemPortfolio
+             key={index}
+             Link={item.Link}
+             image={item.image}
+             title={item.title }
+            ></ItemPortfolio>
+          )}
+        </main>
+      )
+    }      
     
-    return(
+   /* return(
         <main>
 
         <div className="item-portfolio">
@@ -50,7 +46,7 @@ function portfolio() {
         </div>
 
     </main>
-    )
-}
+    )*/
+
 
 export default portfolio;
