@@ -7,18 +7,41 @@ function Contato() {
     const[telefone, setTelefone] = useState("");
     const[mensagem, setMensagem] = useState("");
 
-
+      
+    console.log(import.meta.env.VITE_WHATSAPP_NUMBER);
 
 
     function enviarFormulario(event){
         event.preventDefault()
+        
         console.log("Formulário enviado!");
-        console.log("Nome: " + nome);
-        console.log("E-mail: " + email);
-        console.log("Telefone: " + telefone);
-        console.log("Mensagem: " + mensagem);
+
+        const texto = `Nome: ${nome}\nTelefone: ${telefone}\nMensagem: ${mensagem}`;
+
+        const numeroWhatsApp = import.meta.env.VITE_WHATSAPP_NUMBER;
+
+        const linkWhatsApp= `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+
+        window.open(linkWhatsApp, `_blank`);
         
     }
+        function mascaraTelefone(event) {
+            const texto = event.target.value;
+            const textoApenasNumeros = texto.replace(/\D/g, '').substring(0,11);
+
+            let telefoneFormatado = textoApenasNumeros.replace(/^(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+            if(textoApenasNumeros.length < 11) {
+                telefoneFormatado = textoApenasNumeros.replace(/^(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3')
+            }
+            setTelefone(telefoneFormatado);
+        }
+       
+       /* console.log("Nome: " + nome);
+        console.log("E-mail: " + email);
+        console.log("Telefone: " + telefone);
+        console.log("Mensagem: " + mensagem);*/
+        
+    
 
     return (
     <>
@@ -39,6 +62,7 @@ function Contato() {
         </fieldset>
 
          {email}
+
         <fieldset>
             <label htmlFor="input-email"> E-mail</label>
             <input type="email" 
@@ -59,7 +83,7 @@ function Contato() {
               required pattern="^\(\d{2}) \d{5}-\d{4}$" 
               maxLength="15"
               value={telefone}
-              onChange={(event)=> setTelefone(event.target.value)}/>
+              onChange={(mascaraTelefone)}/>
         </fieldset>
 
         {mensagem}
